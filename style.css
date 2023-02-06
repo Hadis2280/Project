@@ -1,0 +1,131 @@
+ /* براساس خود المنت  */
+footer {
+    background-color: blueviolet;
+  }
+  p {
+    color: chartreuse;
+  }
+  header{
+      background-color: darkblue;
+  }
+  /* ********************** */
+  /* id and classs */
+  #text{
+      color:darkgoldenrod;
+      background-color: black;
+  }
+  .background{
+    color:black;
+    background-color:darkgreen;
+  }
+  .text{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  /* **************************** */
+  /* کلاس های چند سطحی و وابسته */
+  .text_color.background{
+    background-color: blue;
+  }
+  #text.text_color{
+    color: darkcyan;
+  }
+  .text_color.background.bold{
+    color: brown;
+  }
+  div.bold{
+    font-weight: 300;
+    color: yellowgreen;
+    background-color:darkslategrey;
+  }
+  header .bold{
+    margin: 18px;
+    padding: 20px;
+    background-color: aqua;
+    color: blueviolet;
+  }
+  .text .bold #text{
+    background-color: crimson;
+  }
+  /* **************************** */
+  /* اتتخاب کننده خصوصیات */
+  a[href]{
+    color: pink;
+  }
+  a[href="#"]{
+    color:deeppink;
+  }
+  a[href="www.google.com"]{
+    background-color: black;
+  }
+  a[href*="google"]{
+    color: yellow;
+  }
+  a[href$="org"]{
+    color: red;
+  }
+  li[class~="item"] a{
+    color:mediumorchid;
+  }
+  /* ****************************** */
+  /* عملگرهای انتخاب کننده */
+  li > span{
+    background-color: brown;
+  }
+  a > span{
+    background-color: chocolate;
+  }
+  li.item + span{
+    background-color: darkslategrey;
+  }
+  li.item ~ span{
+    background-color: darkslategrey;
+  }
+  /* ************************ */
+  .pa.bold{
+    font-style: italic;
+    font-weight: bold;
+  }
+  #pa.bold{
+    font-size: 50px;
+    font-style: normal;
+  }
+  div.pa{
+    font-size: 80px;
+  }
+  header div .bold{
+    background-color: brown;
+  }
+header .pa{
+  color: cyan;
+}
+footer div  .pa.bold{
+  background-color: blue;
+}
+
+li:hover{
+  background-color: darkcyan;
+}
+li:hover a{
+  color: white;
+}
+ul li:first-child a{
+  color: green;
+}
+li::after{
+  content: "after";
+  color: blueviolet;
+}
+li::before{
+  content: "before";
+  color: crimson;
+}
+/* p::first-letter{
+  font-weight: bold;
+  color: red;
+}
+p::first-line{
+  font-style: italic;
+  color:blue;
+} */
